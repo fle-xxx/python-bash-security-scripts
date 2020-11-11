@@ -1,4 +1,4 @@
-# python-security-scripts
+# python/bash-security-scripts
 
-They all run on python3. 
-Scripts need extra libraries to be downloaded. 
+Py scripts all run on python3. Extra libraries need to be downloaded.
+ 
