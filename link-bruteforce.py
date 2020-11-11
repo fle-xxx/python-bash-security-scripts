@@ -7,7 +7,7 @@ def main():
 
     count = 0
     root_link = 'https://example.com/index.html?token=AB' # this is a constant part of link
-    adapter = HTTPAdapter(max_retries = 5) # create an adapter, to retry request after unsuccessful attempt
+    adapter = HTTPAdapter(max_retries = 5) # create an adapter to retry request after unsuccessful attempt
     http = requests.Session()
     http.mount("https://", adapter)
 
