@@ -1,6 +1,6 @@
 #!/bin/bash
 
-root_link="https://example.com/blabla/"
+root_link="https://example.com/blabla/?p="
 
 for (( i = 500; i < 10000; i++ ))
     do
