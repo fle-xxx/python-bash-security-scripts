@@ -10,7 +10,7 @@ def main():
 
     while 1 == 1: 
 
-        r = requests.post(root_link, json=payload)
+        requests.post(root_link, json=payload)
        
         #easy to make get instead post just by deleting data (json) 
 
