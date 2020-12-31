@@ -4,8 +4,6 @@ filein=$1
 
 fileout=$2
 
-tmpfile="tmp.txt"
-
 
 if [[ ("$filein" == "-h") || ("$filein" == "") || ("$fileout" == "")]]; then
 
@@ -14,7 +12,6 @@ if [[ ("$filein" == "-h") || ("$filein" == "") || ("$fileout" == "")]]; then
 	exit 1;
 
 fi
-
 
 
 while IFS= read -r line
@@ -30,5 +27,3 @@ while IFS= read -r line
                 echo -en '\n';
                                  
         done < "$filein" > "$fileout"
-
-
