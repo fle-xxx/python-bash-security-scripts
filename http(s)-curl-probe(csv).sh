@@ -10,8 +10,8 @@ file=$1
                         res1=$(curl -o /dev/null -s -w "%{http_code}\n" https://$line)
                         res2=$(curl -o /dev/null -s -w "%{http_code}\n" http://$line)
 
-                        echo $line;
-                        echo $res1;
-                        echo $res2;
+                        echo -n $line; echo -n ','; echo -n $res1; echo -n ','; echo -n $res2; echo -en '\n'; 
+
 
                 done <"$file"
+
