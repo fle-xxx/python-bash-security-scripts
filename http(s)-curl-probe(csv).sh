@@ -1,7 +1,9 @@
 #!/bin/bash
 
 
-file=$1
+filein=$1
+fileout=$2
+
 
         while IFS= read line
 
@@ -13,5 +15,5 @@ file=$1
                         echo -n $line; echo -n ','; echo -n $res1; echo -n ','; echo -n $res2; echo -en '\n'; 
 
 
-                done <"$file"
+                done <"$filein" | grep -v '000,000' > "$fileout"
 
