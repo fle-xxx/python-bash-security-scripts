@@ -30,3 +30,5 @@ Creates file:
 ...
 
 for any cidr
+Usage:
+./cidr.sh cidrfile
