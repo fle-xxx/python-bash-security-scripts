@@ -15,7 +15,7 @@ for a in $alphabet
                             do
                                 url="$root_link$a$i$j$k" #creates links like https://example.com/bla/Abc1
                          
-                                res=$(curl -I --silent $url | grep 'word_we_want_to_catch1.*word_we_want_to_catch2' | grep -v 'word_we_not_want_to_catch1\|word_we_not_want_to_catch2')
+                                res=$(curl -i --silent $url | grep 'word_we_want_to_catch1.*word_we_want_to_catch2' | grep -v 'word_we_not_want_to_catch1\|word_we_not_want_to_catch2')
                                 
                                 if [[ ("$res" != "") && ("$res" != "$not_needed_string") ]]
                                     then echo $res; echo -e $url
