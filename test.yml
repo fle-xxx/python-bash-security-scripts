@@ -1,0 +1,17 @@
+<yml_catalog>
+    <shop>
+        ...
+        <offers>
+            <offer id="АРТИКУЛ_В_ЛК">
+                <price>9760</price>
+                <oldprice>10736</oldprice>
+                <premium_price>10000</premium_price>
+                <outlets>
+                    <outlet instock="10" warehouse_name="склад 1"></outlet>
+                    <outlet instock="13" warehouse_name="склад 2"></outlet>
+                </outlets>
+            </offer>
+            ...
+        </offers>
+    </shop>
+</yml_catalog>
