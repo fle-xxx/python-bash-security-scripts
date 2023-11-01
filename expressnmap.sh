@@ -18,3 +18,5 @@ curl -s -K "$TMP_CONFIG" | grep -v "No information available"
 
 # Удаляем временный конфигурационный файл
 rm "$TMP_CONFIG"
+
+#usage: ./expressnmap.sh ips_file
