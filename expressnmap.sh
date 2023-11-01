@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <path to file with words>"
+    echo "Usage: $0 <path to file with ips>"
     exit 1
 fi
 
@@ -9,8 +9,8 @@ FILE_PATH="$1"
 TMP_CONFIG=$(mktemp)
 
 # Записываем в конфиг каждый URL и указываем разделитель после каждого ответа
-while read -r word; do
-    echo "url = \"https://internetdb.shodan.io/$word\"" >> "$TMP_CONFIG"
+while read -r ip; do
+    echo "url = \"https://internetdb.shodan.io/$ip\"" >> "$TMP_CONFIG"
     echo "write-out = \"\n\"" >> "$TMP_CONFIG"
 done < "$FILE_PATH"
 
